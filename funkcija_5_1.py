@@ -40,4 +40,7 @@ plt.scatter(X[:,0],X[:,1])
 plt.show()
 
 KMeans= KMeans(n_clusters=3)
-KMeans.fit()
+KMeans.fit(X)
+
+plt.scatter(X[:,0],X[:,1],c=KMeans.labels_)
+plt.show()
